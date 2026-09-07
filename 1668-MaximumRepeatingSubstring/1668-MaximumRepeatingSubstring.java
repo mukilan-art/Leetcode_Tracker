@@ -1,0 +1,14 @@
+// Last updated: 9/7/2026, 4:26:25 PM
+class Solution {
+    public int maxRepeating(String sequence, String word) {
+        int count = 0;
+        String temp = word;
+
+        while (sequence.contains(temp)) {
+            count++;
+            temp = temp + word;
+        }
+
+        return count;
+    }
+}
